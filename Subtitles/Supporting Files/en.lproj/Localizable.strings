@@ -1,0 +1,70 @@
+/* 
+  Localizable.strings
+  Subtitles
+
+  Created by Akram Hussein on 06/01/2018.
+  Copyright © 2018 Akram Hussein. All rights reserved.
+*/
+
+/* General */
+"OK" = "OK";
+"Done" = "Done";
+"Save" = "Save";
+"Add" = "Add";
+"Delete" = "Delete";
+
+/* Audio */
+
+"Audio.IntermediateText.Show" = "Show Intermediate Text";
+"Audio.IntermediateText.Hide" = "Hide Intermediate Text";
+"Audio.ClearText" = "Clear Text";
+"Audio.Pause" = "Pause";
+"Audio.InvertBackgroundColour" = "Invert Background Color";
+"Audio.SwitchMicrophone.Bluetooth" = "Switch to Bluetooth Microphone";
+"Audio.SwitchMicrophone.Phone" = "Switch to iPhone Microphone";
+"Audio.BluetoothMicrophone.Connected" = "Connected to Bluetooth microphone";
+"Audio.BluetoothMicrophone.LostConnection" = "Lost connection to Bluetooth microphone";
+"Audio.BluetoothMicrophone.Failed.Title" = "Failed to connect to Bluetooth microphone";
+"Audio.BluetoothMicrophone.Failed.Message" = "Please check Bluetooth is enabled on the phone and Bluetooth microphone has power or restart device";
+"Audio.AddCommonPhrases" = "Add Common Phrases";
+"Audio.AddKeywordColours" = "Add Keyword Colours";
+"Audio.Options" = "Options";
+
+/* Options */
+"Options.Title" = "Options";
+"Options.Section.APIKey.Header" = "API Key";
+"Options.Section.APIKey.Footer" = "API Keys can be created at https://console.cloud.google.com/apis/credentials";
+"Options.Section.APIKey.Error" = "Please enter an API Key. Without an API Key this app cannot be used.";
+"Options.Section.SpeechPredictionConfidence.Header" = "Speech Prediction Confidence";
+"Options.Section.SpeechPredictionConfidence.Footer" = "Indicates how confident the Speech-to-Text prediction should be before accepting the result";
+"Options.Row.Confidence" = "Confidence";
+"Options.Row.Confidence.Error" = "Please set a Speech Prediction Confidence value";
+"Options.Row.Language" = "Language";
+"Options.Section.ShowKeywords.Header" = "Show Keywords";
+"Options.Section.ShowKeywords.Footer" = "When using Colour Keywords (e.g. Banana for Yellow), enabling this option will keep the Keyword in the text";
+"Options.Row.ShowKeywords" = "Show Keywords";
+
+
+/* Keywords */
+"Keywords.Title" = "Keywords";
+
+/* Add Keywords */
+"AddKeyword.Title" = "Add Keyword";
+"AddKeyword.Row.Name" = "Name";
+"AddKeyword.Row.Name.Placeholder" = "John";
+"AddKeyword.Row.Name.Error" = "Please enter a Name, cannot be empty";
+"AddKeyword.Row.Name.Duplicate" = "This Name already exists, please enter a new one";
+"AddKeyword.Row.Keyword" = "Keyword";
+"AddKeyword.Row.Keyword.Placeholder" = "Banana";
+"AddKeyword.Row.Keyword.Error" = "Please enter a Keyword, cannot be empty";
+"AddKeyword.Row.Keyword.Duplicate" = "This Keyword already exists, please enter a new one";
+"AddKeyword.Row.Colour" = "Colour";
+"AddKeyword.Row.Colour.Error" = "Please select a Colour, cannot be Black";
+
+/* Common Phrases */
+
+"CommonPhrases.Title" = "Common Phrases";
+"CommonPhrases.Section.Footer" = "Add common phrases that come up in conversation to improve translation accuracy (e.g. Golf, swimming, potato salad)";
+"CommonPhrases.Row.AddNewPhrase" = "Add New Phrase";
+"CommonPhrases.Row.Phrase.Placeholder" = "Phrase";
+"CommonPhrases.Row.Phrase.Example.Placeholder" = "Potato Salad";
