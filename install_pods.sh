@@ -9,11 +9,12 @@ echo "Cleaning BoringSSL module.modulemap..."
 echo "Done"
 
 echo "Fixing bad imports in Protobuf generated files..."
-grep -rl "google/cloud/speech/v1beta1/CloudSpeech.pbobjc.h"  google/** | xargs sed -i '' s@'"google\/cloud\/speech\/v1beta1\/CloudSpeech\.pbobjc\.h"'@'\<googleapis\/CloudSpeech\.pbobjc\.h\>'@g
+grep -rl "google/cloud/speech/v1p1beta1/CloudSpeech.pbobjc.h"  google/** | xargs sed -i '' s@'"google\/cloud\/speech\/v1p1beta1\/CloudSpeech\.pbobjc\.h"'@'\<googleapis\/CloudSpeech\.pbobjc\.h\>'@g
 grep -rl "google/api/Annotations.pbobjc.h"  google/** | xargs sed -i '' s@'"google\/api\/Annotations\.pbobjc\.h"'@'\<googleapis\/Annotations\.pbobjc\.h\>'@g
 grep -rl "google/longrunning/Operations.pbobjc.h"  google/** | xargs sed -i '' s@'"google\/longrunning\/Operations\.pbobjc\.h"'@'\<googleapis\/Operations\.pbobjc\.h\>'@g
 grep -rl "google/rpc/Status.pbobjc.h"  google/** | xargs sed -i '' s@'"google\/rpc\/Status\.pbobjc\.h"'@'\<googleapis\/Status\.pbobjc\.h\>'@g
 grep -rl "google/cloud/speech/v1/CloudSpeech.pbobjc.h"  google/** | xargs sed -i '' s@'"\google\/cloud\/speech\/v1\/CloudSpeech\.pbobjc\.h\"'@'\<googleapis\/CloudSpeech\.pbobjc\.h\>'@g
+grep -rl "google/protobuf/Duration.pbobjc.h"  google/** | xargs sed -i '' s@'"\google\/protobuf\/Duration\.pbobjc\.h\"'@'\<googleapis\/Duration\.pbobjc\.h\>'@g
 echo "Done"
 
 echo "Fixing bad gRPC-RxLibrary-umbrella.h import..."
@@ -22,7 +23,12 @@ rm Pods/Target\ Support\ Files/gRPC-RxLibrary/gRPC-RxLibrary-umbrella.h.bac
 echo "Done"
 
 echo "Fixing bad gRPC-umbrella.h import..."
-sed -i .bac 's/#import\ "internal_testing\/GRPCCall+InternalTests.h"//g' Pods/Target\ Support\ Files/gRPC/gRPC-umbrella.hrm Pods/Target\ Support\ Files/gRPC/gRPC-umbrella.h.bac
+sed -i .bac 's/#import\ "internal_testing\/GRPCCall+InternalTests.h"//g' Pods/Target\ Support\ Files/gRPC/gRPC-umbrella.h Pods/Target\ Support\ Files/gRPC/gRPC-umbrella.h.bac
 echo "Done"
+
+echo "Fixing bad GRXMappingWriter.h import..."
+sed -i .bac 's/#import "GRXMappingWriter.h"//g' Pods/Target\ Support\ Files/gRPC-RxLibrary/gRPC-RxLibrary-umbrella.h Pods/Target\ Support\ Files/gRPC-RxLibrary/gRPC-RxLibrary-umbrella.h.bac
+echo "Done"
+
 
 echo "Install completed!"
