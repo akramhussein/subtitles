@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "Installing Cocoapod dependencies..."
-pod install
+pod install --verbose --repo-update
 echo "Done"
 
 echo "Cleaning BoringSSL module.modulemap..."
