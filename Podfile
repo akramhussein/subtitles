@@ -3,7 +3,7 @@ use_frameworks!
 
 target 'Subtitles' do
   pod 'DefaultsKit'
-  pod 'Eureka', '~> 4.0.1'
+  pod 'Eureka', '~> 4.1.1'
   pod 'Material'
   pod 'AudioKit'
   pod 'SimpleDatagramProtocol'
