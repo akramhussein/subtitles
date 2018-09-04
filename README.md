@@ -39,7 +39,11 @@ Keyword Colours            |  Options
 
 2. Install [cocoapods](https://cocoapods.org/)
 
-  `$ cd ./subtitles && pod install`
+```
+   $ cd ./subtitles
+   $ chmod +x ./install_pods.sh
+   $ ./install_pods.sh
+```
 
 3. Open "Subtitles.xcworkspace" in Xcode
 
