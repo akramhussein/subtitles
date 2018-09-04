@@ -5,7 +5,7 @@ target 'Subtitles' do
   pod 'DefaultsKit'
   pod 'Eureka', '~> 4.1.1'
   pod 'Material'
-  pod 'AudioKit'
+  pod 'AudioKit', '~> 4.3'
   pod 'SimpleDatagramProtocol'
   pod 'UIColor_Hex_Swift'
   pod 'googleapis', :path => '.'

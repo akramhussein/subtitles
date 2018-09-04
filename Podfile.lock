@@ -4,9 +4,9 @@ PODS:
   - "!ProtoCompiler-gRPCPlugin (1.0.2)":
     - "!ProtoCompiler (= 3.0.2)"
     - gRPC-ProtoRPC (= 1.0.2)
-  - AudioKit (4.0.4):
-    - AudioKit/UI (= 4.0.4)
-  - AudioKit/UI (4.0.4)
+  - AudioKit (4.3):
+    - AudioKit/UI (= 4.3)
+  - AudioKit/UI (4.3)
   - BoringSSL (7.0):
     - BoringSSL/Implementation (= 7.0)
     - BoringSSL/Interface (= 7.0)
@@ -56,7 +56,7 @@ PODS:
   - UIColor_Hex_Swift (3.0.2)
 
 DEPENDENCIES:
-  - AudioKit
+  - AudioKit (~> 4.3)
   - ColorPickerRow (from `https://github.com/EurekaCommunity/ColorPickerRow`)
   - DefaultsKit
   - Eureka (~> 4.1.1)
@@ -97,7 +97,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   "!ProtoCompiler": cfad9cbe5299a4923b1c3c8f150818c91efd0b6d
   "!ProtoCompiler-gRPCPlugin": ee00d28bb35b26e2657f239833b8f2aa66724f96
-  AudioKit: 647145c0462dc9dc8a8582998cd6db5f2e1ea848
+  AudioKit: 95bd2427c1afa7954d71b0c6195a09b87b7448bc
   BoringSSL: 50035b9d9eeff5529587311782fc57c00ebf13ae
   ColorPickerRow: f3f4abb13a64bffbf1cb415b8bbe20696e2146f2
   DefaultsKit: d4e4271525388e33a17ee6842f2ded78f6892bc7
@@ -113,6 +113,6 @@ SPEC CHECKSUMS:
   SimpleDatagramProtocol: 80105ba0c9462df5e0c9741f7bf13757cf44ff11
   UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
 
-PODFILE CHECKSUM: 35e7de27b413525cf48d0cbeaf37dc0f9c03919e
+PODFILE CHECKSUM: 35e7c7387a4fcf06ef1cdc9ec59b8e15a8548ba9
 
 COCOAPODS: 1.5.3
