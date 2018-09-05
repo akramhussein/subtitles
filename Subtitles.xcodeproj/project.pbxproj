@@ -151,11 +151,11 @@
 		FA1D75971F3709C700CE696A /* Subtitles */ = {
 			isa = PBXGroup;
 			children = (
+				FAC8C4FE1FD24D7400CB2EBD /* App */,
 				FAAACB37213F59A900036AAF /* Extensions */,
 				FAC398A51F37802D005BC978 /* Services */,
 				FA1D75AA1F3709E200CE696A /* Supporting Files */,
 				FA1D75B11F3710E600CE696A /* View Controllers */,
-				FAC8C4FE1FD24D7400CB2EBD /* App */,
 			);
 			path = Subtitles;
 			sourceTree = "<group>";
@@ -175,9 +175,9 @@
 		FA1D75B11F3710E600CE696A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA5F90811FDC39FA0021C371 /* Add Keyword */,
 				FAFFBF251FD19E6D002D0710 /* Audio Kit */,
 				FAC8C4FD1FD249D000CB2EBD /* Common Phrases */,
-				FA5F90811FDC39FA0021C371 /* Add Keyword */,
 				FA5F907C1FDC39E40021C371 /* Keywords  */,
 				FA6F97321FDD8D780099BE0C /* Options */,
 			);
@@ -187,8 +187,8 @@
 		FA2A53551FD22A28006BAEC3 /* Speech Recognition */ = {
 			isa = PBXGroup;
 			children = (
-				FA1D75AF1F3710C000CE696A /* SpeechRecognitionService.swift */,
 				FACA7B781FD335890090EE83 /* BluetoothRelay.swift */,
+				FA1D75AF1F3710C000CE696A /* SpeechRecognitionService.swift */,
 			);
 			path = "Speech Recognition";
 			sourceTree = "<group>";
@@ -199,6 +199,7 @@
 				FA5F90781FDC30150021C371 /* KeywordListViewController.swift */,
 				FA5F90791FDC30150021C371 /* KeywordListViewController.xib */,
 			);
+			name = "Keywords ";
 			path = "Keywords ";
 			sourceTree = "<group>";
 		};
@@ -221,23 +222,23 @@
 		FAAACB03213F584C00036AAF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				FAAACB04213F584C00036AAF /* UIImageView+Animations.swift */,
-				FAAACB06213F584C00036AAF /* UICollectionView+Register.swift */,
-				FAAACB07213F584C00036AAF /* UIColor.swift */,
-				FAAACB08213F584C00036AAF /* UIView+RoundedCorners.swift */,
-				FAAACB09213F584C00036AAF /* UILabel+Additions.swift */,
-				FAAACB0A213F584C00036AAF /* UIViewController+Alerts.swift */,
-				FAAACB0B213F584C00036AAF /* UITextFieldWithInset.swift */,
 				FAAACB0C213F584C00036AAF /* PopGestureDelegate.swift */,
-				FA5F90761FDC11E70021C371 /* UIView.swift */,
+				FAAACB12213F584C00036AAF /* UIBarButtonItem+AppButtons.swift */,
+				FAAACB0F213F584C00036AAF /* UIButton+setBackgroundForState.swift */,
+				FAAACB06213F584C00036AAF /* UICollectionView+Register.swift */,
+				FAAACB13213F584C00036AAF /* UIColor+RGBA.swift */,
+				FAAACB07213F584C00036AAF /* UIColor.swift */,
 				FAAACB0D213F584C00036AAF /* UIDevice.swift */,
 				FAAACB0E213F584C00036AAF /* UIImage+Color.swift */,
-				FAAACB0F213F584C00036AAF /* UIButton+setBackgroundForState.swift */,
-				FAAACB10213F584C00036AAF /* UITableViewHelper.swift */,
-				FAAACB11213F584C00036AAF /* UIView+Fade.swift */,
-				FAAACB12213F584C00036AAF /* UIBarButtonItem+AppButtons.swift */,
-				FAAACB13213F584C00036AAF /* UIColor+RGBA.swift */,
+				FAAACB04213F584C00036AAF /* UIImageView+Animations.swift */,
+				FAAACB09213F584C00036AAF /* UILabel+Additions.swift */,
 				FAAACB14213F584C00036AAF /* UITableView+Register.swift */,
+				FAAACB10213F584C00036AAF /* UITableViewHelper.swift */,
+				FAAACB0B213F584C00036AAF /* UITextFieldWithInset.swift */,
+				FAAACB11213F584C00036AAF /* UIView+Fade.swift */,
+				FAAACB08213F584C00036AAF /* UIView+RoundedCorners.swift */,
+				FA5F90761FDC11E70021C371 /* UIView.swift */,
+				FAAACB0A213F584C00036AAF /* UIViewController+Alerts.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -245,11 +246,11 @@
 		FAAACB26213F585700036AAF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				FAAACB2A213F585700036AAF /* ClassName.swift */,
+				FAAACB2C213F585700036AAF /* Dictionary+Additions.swift */,
 				FAAACB27213F585700036AAF /* NSMutableAttributedString+Sizing.swift */,
 				FAAACB28213F585700036AAF /* Platform.swift */,
 				FAAACB29213F585700036AAF /* String.swift */,
-				FAAACB2A213F585700036AAF /* ClassName.swift */,
-				FAAACB2C213F585700036AAF /* Dictionary+Additions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -258,8 +259,8 @@
 			isa = PBXGroup;
 			children = (
 				FAAACB26213F585700036AAF /* Foundation */,
-				FAAACB03213F584C00036AAF /* UIKit */,
 				FAC398A61F378034005BC978 /* Third Party */,
+				FAAACB03213F584C00036AAF /* UIKit */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -292,8 +293,8 @@
 			isa = PBXGroup;
 			children = (
 				FA1D75981F3709C700CE696A /* AppDelegate.swift */,
-				FAC8C4F71FD2328C00CB2EBD /* Theme.swift */,
 				FAC8C4FF1FD24D7F00CB2EBD /* Keys.swift */,
+				FAC8C4F71FD2328C00CB2EBD /* Theme.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -301,11 +302,11 @@
 		FAFFBF251FD19E6D002D0710 /* Audio Kit */ = {
 			isa = PBXGroup;
 			children = (
-				FAFFBF211FD19E02002D0710 /* AudioViewController.swift */,
 				FACA7B7A1FD335DA0090EE83 /* AudioViewController+BluetoothRelayDelegate.swift */,
+				FACA7B7C1FD338180090EE83 /* AudioViewController+Buttons.swift */,
+				FAFFBF211FD19E02002D0710 /* AudioViewController.swift */,
 				FAFFBF221FD19E02002D0710 /* AudioViewController.xib */,
 				FA2A53261FD1DF1E006BAEC3 /* GoogleSpeechToTextStreamingTap.swift */,
-				FACA7B7C1FD338180090EE83 /* AudioViewController+Buttons.swift */,
 			);
 			path = "Audio Kit";
 			sourceTree = "<group>";
@@ -517,6 +518,7 @@
 				FAC60AE92000F2400008D7A5 /* en */,
 			);
 			name = Localizable.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
