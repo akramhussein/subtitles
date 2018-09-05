@@ -1,67 +1,75 @@
 PODS:
-  - "!ProtoCompiler (3.0.2)":
+  - "!ProtoCompiler (3.4.0)":
     - Protobuf (~> 3.0)
-  - "!ProtoCompiler-gRPCPlugin (1.0.2)":
-    - "!ProtoCompiler (= 3.0.2)"
-    - gRPC-ProtoRPC (= 1.0.2)
-  - AudioKit (4.3):
-    - AudioKit/UI (= 4.3)
-  - AudioKit/UI (4.3)
-  - BoringSSL (7.0):
-    - BoringSSL/Implementation (= 7.0)
-    - BoringSSL/Interface (= 7.0)
-  - BoringSSL/Implementation (7.0):
-    - BoringSSL/Interface (= 7.0)
-  - BoringSSL/Interface (7.0)
-  - ColorPickerRow (1.1.0):
+  - "!ProtoCompiler-gRPCPlugin (1.6.5)":
+    - "!ProtoCompiler (= 3.4.0)"
+    - gRPC-ProtoRPC (= 1.6.5)
+  - AudioKit (4.2.4):
+    - AudioKit/UI (= 4.2.4)
+  - AudioKit/UI (4.2.4)
+  - BoringSSL (9.2):
+    - BoringSSL/Implementation (= 9.2)
+    - BoringSSL/Interface (= 9.2)
+  - BoringSSL/Implementation (9.2):
+    - BoringSSL/Interface (= 9.2)
+  - BoringSSL/Interface (9.2)
+  - ColorPickerRow (1.2.1):
     - Eureka (>= 3.0.0)
     - UIColor_Hex_Swift (>= 3.0.0)
   - DefaultsKit (0.0.8)
   - Eureka (4.1.1)
   - googleapis (0.0.1):
-    - "!ProtoCompiler-gRPCPlugin (~> 1.0.0-pre1.1)"
+    - "!ProtoCompiler-gRPCPlugin (= 1.6.5)"
     - googleapis/Messages (= 0.0.1)
     - googleapis/Services (= 0.0.1)
   - googleapis/Messages (0.0.1):
-    - "!ProtoCompiler-gRPCPlugin (~> 1.0.0-pre1.1)"
+    - "!ProtoCompiler-gRPCPlugin (= 1.6.5)"
     - Protobuf
   - googleapis/Services (0.0.1):
-    - "!ProtoCompiler-gRPCPlugin (~> 1.0.0-pre1.1)"
+    - "!ProtoCompiler-gRPCPlugin (= 1.6.5)"
     - googleapis/Messages
     - gRPC-ProtoRPC
-  - gRPC (1.0.2):
-    - gRPC-Core (= 1.0.2)
-    - gRPC-RxLibrary (= 1.0.2)
-  - gRPC-Core (1.0.2):
-    - gRPC-Core/Implementation (= 1.0.2)
-    - gRPC-Core/Interface (= 1.0.2)
-  - gRPC-Core/Implementation (1.0.2):
-    - BoringSSL (~> 7.0)
-    - gRPC-Core/Interface (= 1.0.2)
-  - gRPC-Core/Interface (1.0.2)
-  - gRPC-ProtoRPC (1.0.2):
-    - gRPC (= 1.0.2)
-    - gRPC-RxLibrary (= 1.0.2)
+  - gRPC (1.6.5):
+    - gRPC-Core (= 1.6.5)
+    - gRPC-RxLibrary (= 1.6.5)
+  - gRPC-Core (1.6.5):
+    - gRPC-Core/Implementation (= 1.6.5)
+    - gRPC-Core/Interface (= 1.6.5)
+  - gRPC-Core/Implementation (1.6.5):
+    - BoringSSL (~> 9.0)
+    - gRPC-Core/Interface (= 1.6.5)
+    - nanopb (~> 0.3)
+  - gRPC-Core/Interface (1.6.5)
+  - gRPC-ProtoRPC (1.6.5):
+    - gRPC (= 1.6.5)
+    - gRPC-RxLibrary (= 1.6.5)
     - Protobuf (~> 3.0)
-  - gRPC-RxLibrary (1.0.2)
+  - gRPC-RxLibrary (1.6.5)
   - Material (2.12.17):
     - Material/Core (= 2.12.17)
   - Material/Core (2.12.17):
     - Motion (~> 1.2.5)
+  - MBProgressHUD (1.1.0)
   - Motion (1.2.5):
     - Motion/Core (= 1.2.5)
   - Motion/Core (1.2.5)
-  - Protobuf (3.5.0)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - Protobuf (3.6.1)
   - SimpleDatagramProtocol (1.1.0)
-  - UIColor_Hex_Swift (3.0.2)
+  - UIColor_Hex_Swift (4.0.2)
 
 DEPENDENCIES:
-  - AudioKit (~> 4.3)
+  - AudioKit (= 4.2.4)
   - ColorPickerRow (from `https://github.com/EurekaCommunity/ColorPickerRow`)
-  - DefaultsKit
-  - Eureka (~> 4.1.1)
+  - DefaultsKit (= 0.0.8)
+  - Eureka (= 4.1.1)
   - googleapis (from `.`)
-  - Material
+  - Material (= 2.12.17)
+  - MBProgressHUD
   - SimpleDatagramProtocol
   - UIColor_Hex_Swift
 
@@ -78,7 +86,9 @@ SPEC REPOS:
     - gRPC-ProtoRPC
     - gRPC-RxLibrary
     - Material
+    - MBProgressHUD
     - Motion
+    - nanopb
     - Protobuf
     - SimpleDatagramProtocol
     - UIColor_Hex_Swift
@@ -91,28 +101,30 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ColorPickerRow:
-    :commit: b1b5e82451f48b2d8bb62160cb312615283c5421
+    :commit: 6283939508de9d84876565f3bd04424a12746cb2
     :git: https://github.com/EurekaCommunity/ColorPickerRow
 
 SPEC CHECKSUMS:
-  "!ProtoCompiler": cfad9cbe5299a4923b1c3c8f150818c91efd0b6d
-  "!ProtoCompiler-gRPCPlugin": ee00d28bb35b26e2657f239833b8f2aa66724f96
-  AudioKit: 95bd2427c1afa7954d71b0c6195a09b87b7448bc
-  BoringSSL: 50035b9d9eeff5529587311782fc57c00ebf13ae
-  ColorPickerRow: f3f4abb13a64bffbf1cb415b8bbe20696e2146f2
+  "!ProtoCompiler": 07d0c441bc00e7f01e84debf7c53794683fbca7c
+  "!ProtoCompiler-gRPCPlugin": dfc8eead3e132b22750b0ec7f5fe4774ef98362a
+  AudioKit: 90ed0de2bc50ab68306f4b424ae1622fc9149b8e
+  BoringSSL: f3d6b8ce199b9c450a8cfc14895d07a2627fc232
+  ColorPickerRow: 87dd091c54fff65cf554f79ca1556312ee66282f
   DefaultsKit: d4e4271525388e33a17ee6842f2ded78f6892bc7
   Eureka: b88fb930e42c79f8c03c373d0fcdc28c1d6c50ed
-  googleapis: a040078da215391c9fc36d4b7254897c572ea48b
-  gRPC: dd3a91e0fb770b9fc4f43d1292fb19f2a2e04158
-  gRPC-Core: cc4a7613190ff0bc60a0c1e702ef07cd3f868ae6
-  gRPC-ProtoRPC: 11533510522a5e9627883a597a796cfe6bef05f3
-  gRPC-RxLibrary: 02cc70b76bc0c5bc622ba27595cca2598d9fe528
+  googleapis: 65023b0a9e64db17337492703f0bbffa0efe4026
+  gRPC: 42f915ce322b1abc5241621acc776f2fdb0a2039
+  gRPC-Core: 54211a073d238ec8569be06e1a939a72f081a3e9
+  gRPC-ProtoRPC: 4299db62f86df58c88844ccb50f5c48993e704f6
+  gRPC-RxLibrary: 1b1c9c9cf666709ad7714cb0e0f3c44dc0cbfb0b
   Material: 5efae18f40ebf40baa2c252086d4646849ee7118
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   Motion: 88a8bee21926af792333f4b9e7170f710e9e48f3
-  Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   SimpleDatagramProtocol: 80105ba0c9462df5e0c9741f7bf13757cf44ff11
-  UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
+  UIColor_Hex_Swift: 2fb123c7d864994a5137ef57c4dc55e17a657d29
 
-PODFILE CHECKSUM: 35e7c7387a4fcf06ef1cdc9ec59b8e15a8548ba9
+PODFILE CHECKSUM: a49484fdbb8c2ff828b22a61c44e37628aaf62de
 
 COCOAPODS: 1.5.3

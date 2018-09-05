@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Subtitles/Extensions/MBProgressHUD.swift">
+   </FileRef>
+   <FileRef
       location = "group:Subtitles.xcodeproj">
    </FileRef>
    <FileRef
