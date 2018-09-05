@@ -45,7 +45,7 @@ public extension UIView {
         }
 
         if let superview = self.superview {
-            subviewsConstraints += superview.constraints.flatMap { (constraint) -> NSLayoutConstraint? in
+            subviewsConstraints += superview.constraints.compactMap { (constraint) -> NSLayoutConstraint? in
                 if let view = constraint.firstItem as? UIView {
                     if view == self {
                         return constraint

@@ -121,7 +121,7 @@ final class AudioViewController: UIViewController {
         SpeechRecognitionService.sharedInstance.sampleRate = Int(self.sampleRate)
 
         // Start audio stream
-        AudioKit.start()
+        try! AudioKit.start()
 
         // Stop transcription before hitting 60s streaming limit
         self.transactionTimer = Timer.scheduledTimer(timeInterval: 55.0,
@@ -140,7 +140,7 @@ final class AudioViewController: UIViewController {
         self.endingTransaction = false
 
         // Stop audio stream
-        AudioKit.stop()
+        try! AudioKit.stop()
 
         // Stop recognition
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {

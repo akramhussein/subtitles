@@ -191,6 +191,14 @@ message RecognitionConfig {
 
   // [Optional] A means to provide context to assist the speech recognition.
   SpeechContext speech_context = 6;
+
+  // Added by Akram Hussein
+
+  // Detect multiple users
+  bool enable_speaker_diarization = 7;
+
+  // Suggested count of users
+  int32 diarization_speaker_count = 8;
 }
 
 // Provides "hints" to the speech recognizer to favor specific words and phrases

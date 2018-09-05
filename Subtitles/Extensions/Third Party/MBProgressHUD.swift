@@ -1,11 +1,10 @@
 //
 //  MBProgressHUD.swift
-//  
+//  AHUtils
 //
-//  Created by Akram Hussein on 05/09/2018.
-//
+//  Created by Akram Hussein on 09/05/2017.
+//  Copyright (c) 2017 Akram Hussein. All rights reserved.
 
-import UIKit
 import MBProgressHUD
 
 public extension MBProgressHUD {
@@ -54,7 +53,7 @@ public extension MBProgressHUD {
     }
     
     func setHUDEndStatusWithImage(message: String, detailsMessage: String? = nil, imagePath: String, delay: Double = 1.0) {
-        let image = Resources.image(imagePath)
+        let image = UIImage(named: imagePath)
         let imageView = UIImageView(image: image)
         self.customView = imageView
         self.mode = .customView
