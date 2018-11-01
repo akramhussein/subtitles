@@ -22,7 +22,7 @@ struct Theme {
         UINavigationBar.appearance().isOpaque = true
         UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().titleTextAttributes = [
-            NSAttributedStringKey.foregroundColor: Color.red.base
+            NSAttributedString.Key.foregroundColor: Color.red.base
         ]
 
         UINavigationBar.appearance().setBackgroundImage(UIImage(),

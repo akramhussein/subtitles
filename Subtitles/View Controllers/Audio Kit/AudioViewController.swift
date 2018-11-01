@@ -42,18 +42,18 @@ final class AudioViewController: UIViewController {
     var hud = MBProgressHUD()
     var currentHighlightColor: UIColor = Color.red.base
 
-    var currentTextAttributes: [NSAttributedStringKey: AnyObject] {
+    var currentTextAttributes: [NSAttributedString.Key: AnyObject] {
         return [
-            NSAttributedStringKey.backgroundColor: self.currentHighlightColor,
-            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 30.0)
+            NSAttributedString.Key.backgroundColor: self.currentHighlightColor,
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 30.0)
         ]
     }
 
-    var currentTempTextAttributes: [NSAttributedStringKey: AnyObject] {
+    var currentTempTextAttributes: [NSAttributedString.Key: AnyObject] {
         return [
-            NSAttributedStringKey.backgroundColor: UIColor.black,
-            NSAttributedStringKey.foregroundColor: self.currentHighlightColor,
-            NSAttributedStringKey.font: UIFont.italicSystemFont(ofSize: 30.0)
+            NSAttributedString.Key.backgroundColor: UIColor.black,
+            NSAttributedString.Key.foregroundColor: self.currentHighlightColor,
+            NSAttributedString.Key.font: UIFont.italicSystemFont(ofSize: 30.0)
         ]
     }
 
@@ -401,7 +401,7 @@ final class AudioViewController: UIViewController {
         UIApplication.shared.isIdleTimerDisabled = true
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(AudioViewController.rotated),
-                                               name: NSNotification.Name.UIDeviceOrientationDidChange,
+                                               name: UIDevice.orientationDidChangeNotification,
                                                object: nil)
 
         // If no API key saved, go to Options page
@@ -421,7 +421,7 @@ final class AudioViewController: UIViewController {
         super.viewDidDisappear(animated)
         UIApplication.shared.isIdleTimerDisabled = false
         NotificationCenter.default.removeObserver(self,
-                                                  name: NSNotification.Name.UIDeviceOrientationDidChange,
+                                                  name: UIDevice.orientationDidChangeNotification,
                                                   object: nil)
     }
 

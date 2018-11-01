@@ -25,13 +25,13 @@ public extension UICollectionView {
 
     func registerFooter(className: String, bundle: Bundle? = nil) {
         self.register(UINib(nibName: className, bundle: bundle),
-                      forSupplementaryViewOfKind: UICollectionElementKindSectionFooter,
+                      forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
                       withReuseIdentifier: className)
     }
 
     func registerHeader(className: String, bundle: Bundle? = nil) {
         self.register(UINib(nibName: className, bundle: bundle),
-                      forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
+                      forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                       withReuseIdentifier: className)
     }
 

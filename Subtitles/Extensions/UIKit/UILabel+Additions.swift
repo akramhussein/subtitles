@@ -14,11 +14,11 @@ public extension UILabel {
             self.sizeToFit()
             var currentFont: UIFont = self.font
             let originalFontSize = currentFont.pointSize
-            var currentSize: CGSize = (self.text! as NSString).size(withAttributes: [NSAttributedStringKey.font: currentFont])
+            var currentSize: CGSize = (self.text! as NSString).size(withAttributes: [NSAttributedString.Key.font: currentFont])
 
             while currentSize.width > self.frame.size.width && currentFont.pointSize > (originalFontSize * minimumScaleFactor) {
                 currentFont = currentFont.withSize(currentFont.pointSize - 1)
-                currentSize = (text! as NSString).size(withAttributes: [NSAttributedStringKey.font: currentFont])
+                currentSize = (text! as NSString).size(withAttributes: [NSAttributedString.Key.font: currentFont])
             }
 
             return currentFont.pointSize

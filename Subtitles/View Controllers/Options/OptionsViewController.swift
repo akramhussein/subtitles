@@ -29,13 +29,14 @@ final class OptionsViewController: FormViewController {
 
             <<< SliderRow("confidence") { row in
                 row.title = "Options.Row.Confidence".localized
-                row.minimumValue = 0.01
-                row.maximumValue = 0.99
                 row.steps = 98
                 row.value = Defaults.shared.get(for: Keys.SpeechConfidence) ?? 0.80
                 row.displayValueFor = {
                     String(format: "%.0f%%", ($0 ?? 0) * 100)
                 }
+            }.cellSetup{ cell, row in
+                cell.slider.minimumValue = 0.01
+                cell.slider.maximumValue = 0.99
             }
 
             +++ Section(header: "", footer: "Options.Section.ShowKeywords.Footer".localized)

@@ -35,8 +35,8 @@ public extension UIBarButtonItem {
         return UIBarButtonItem(title: text, style: .plain, target: delegate, action: action)
     }
 
-    static func activityIndicator(_ style: UIActivityIndicatorViewStyle = .white) -> UIBarButtonItem {
-        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: style)
+    static func activityIndicator(_ style: UIActivityIndicatorView.Style = .white) -> UIBarButtonItem {
+        let activityIndicator = UIActivityIndicatorView(style: style)
         activityIndicator.hidesWhenStopped = true
         activityIndicator.isHidden = false
         activityIndicator.startAnimating()

@@ -12,14 +12,14 @@ public class UITextFieldWithInset: UITextField {
     let padding = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
 
     public override func textRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, self.padding)
+        return bounds.inset(by: self.padding)
     }
 
     public override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, self.padding)
+        return bounds.inset(by: self.padding)
     }
 
     public override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, self.padding)
+        return bounds.inset(by: self.padding)
     }
 }

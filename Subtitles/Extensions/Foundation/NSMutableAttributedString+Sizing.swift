@@ -18,8 +18,8 @@ public extension NSMutableAttributedString {
         var size = font.pointSize
         while size > 1 {
             let attrs = [
-                NSAttributedStringKey.font: font.withSize(size),
-                NSAttributedStringKey.foregroundColor: color
+                NSAttributedString.Key.font: font.withSize(size),
+                NSAttributedString.Key.foregroundColor: color
             ]
             let attrString = NSAttributedString(string: string, attributes: attrs)
             if attrString.size().width <= maxWidth {

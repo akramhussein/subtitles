@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public extension UIButton {
-    func setBackgroundColor(color: UIColor, forState: UIControlState) {
+    func setBackgroundColor(color: UIColor, forState: UIControl.State) {
         guard let context = UIGraphicsGetCurrentContext() else {
             return
         }
